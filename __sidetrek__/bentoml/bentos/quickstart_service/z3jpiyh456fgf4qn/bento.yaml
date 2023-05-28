@@ -1,0 +1,48 @@
+service: project.wf_81_451.__bentoml__.service:svc
+name: quickstart_service
+version: z3jpiyh456fgf4qn
+bentoml_version: 1.0.15
+creation_time: '2023-05-28T00:37:21.882960+00:00'
+labels:
+  organization: 626e62cb-cf4a-45f6-92fc-c2279a621fce
+  project: 43516af4-f055-4c63-b730-badf3c325afb
+  domain: development
+models:
+- tag: quickstart_model:v4uicex4527oj4qn
+  module: bentoml.sklearn
+  creation_time: '2023-05-28T00:29:18.944372+00:00'
+runners:
+- name: quickstart_model
+  runnable_type: SklearnRunnable
+  models:
+  - quickstart_model:v4uicex4527oj4qn
+  resource_config: null
+apis:
+- name: classify
+  input_type: NumpyNdarray
+  output_type: NumpyNdarray
+docker:
+  distro: debian
+  python_version: '3.10'
+  cuda_version: null
+  env: null
+  system_packages: null
+  setup_script: null
+  base_image: null
+  dockerfile_template: null
+python:
+  requirements_txt: ./requirements.txt
+  packages: null
+  lock_packages: null
+  index_url: null
+  no_index: null
+  trusted_host: null
+  find_links: null
+  extra_index_url: null
+  pip_args: null
+  wheels: null
+conda:
+  environment_yml: null
+  channels: null
+  dependencies: null
+  pip: null

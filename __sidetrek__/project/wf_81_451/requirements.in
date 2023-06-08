@@ -1,6 +1,0 @@
-pandas
-scikit-learn
-numpy<1.23.5
-joblib
-dataclasses_json
-sidetrek==0.0.85

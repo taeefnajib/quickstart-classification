@@ -7,7 +7,7 @@ from dataclasses_json import dataclass_json
 from dataclasses import dataclass
 from sidetrek.dataset import load_dataset
 from sidetrek.types.dataset import SidetrekDataset
-
+ 
 @dataclass_json
 @dataclass
 class Hyperparameters(object):
